@@ -280,15 +280,20 @@ export default function BugePage() {
             alt="BOBO - Blue Bear Character"
             width={320}
             height={320}
-            className="w-60 h-60 sm:w-80 sm:h-80 rounded-3xl shadow-lg animate-pulse object-cover"
+            className="w-60 h-60 sm:w-80 sm:h-80 rounded-3xl animate-pulse object-cover"
           />
         </div>
 
-        <WordByWordText
-          text="BOBO is a digital bear born on Base Network. He exists to bring back what's been missing—real internet culture with soul. He doesn't make promises. He simply reminds us that a meme, if it hits right, can move people more than any roadmap ever could. He was made for the ones who remember when crypto was fun. When coins felt alive because the people behind them cared. BOBO is for the artists, the internet chads, the ones who stick around when everyone else moves on. Join the journey. Help build the legacy."
+        <p
           className="text-lg sm:text-xl md:text-2xl text-white max-w-4xl text-center leading-relaxed px-4"
           style={{ WebkitTextStroke: "0.5px black", WebkitTextFillColor: "white" }}
-        />
+        >
+          BOBO is a digital bear born on Base Network. He exists to bring back what's been missing—real internet culture
+          with soul. He doesn't make promises. He simply reminds us that a meme, if it hits right, can move people more
+          than any roadmap ever could. He was made for the ones who remember when crypto was fun. When coins felt alive
+          because the people behind them cared. BOBO is for the artists, the internet chads, the ones who stick around
+          when everyone else moves on. Join the journey. Help build the legacy.
+        </p>
       </section>
 
       {/* Bobonomics Section */}
@@ -305,15 +310,17 @@ export default function BugePage() {
             alt="Strong BOBO - Muscular Blue Bear"
             width={320}
             height={320}
-            className="w-60 h-60 sm:w-80 sm:h-80 rounded-3xl shadow-lg animate-pulse object-cover"
+            className="w-60 h-60 sm:w-80 sm:h-80 rounded-3xl animate-pulse object-cover"
           />
         </div>
 
-        <WordByWordText
-          text="Bobo is on a mission to become the face of internet culture on Base Network. Not a copy. Not a gimmick. A new original. An internet bear for the digital age."
+        <p
           className="text-lg sm:text-2xl md:text-3xl text-white max-w-3xl text-center mb-8 sm:mb-12 leading-relaxed px-4"
           style={{ WebkitTextStroke: "0.5px black", WebkitTextFillColor: "white" }}
-        />
+        >
+          Bobo is on a mission to become the face of internet culture on Base Network. Not a copy. Not a gimmick. A new
+          original. An internet bear for the digital age.
+        </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8 max-w-6xl w-full">
           {[
@@ -362,32 +369,21 @@ export default function BugePage() {
             {
               title: "GET A WALLET",
               text: "Download and set up MetaMask or any Base-compatible wallet. Make sure your wallet is connected to the Base network.",
-              image: "/placeholder.svg?height=250&width=250",
             },
             {
               title: "ADD ETH",
               text: "Bridge ETH to Base network or buy ETH directly on Base. You'll need it to swap for $BOBO and pay gas fees.",
-              image: "/placeholder.svg?height=250&width=250",
             },
             {
               title: "VISIT DEX",
               text: "Go to Uniswap or any Base DEX, connect your wallet, and import the $BOBO token using the official contract address.",
-              image: "/placeholder.svg?height=250&width=250",
             },
             {
               title: "NOW SWAP",
               text: "Enter the amount of ETH you want to trade, approve the swap, and confirm the transaction in your wallet.",
-              image: "/placeholder.svg?height=250&width=250",
             },
           ].map((step, index) => (
             <div key={index} className="flex flex-col items-center text-center">
-              <Image
-                src={step.image || "/placeholder.svg"}
-                alt={step.title}
-                width={250}
-                height={250}
-                className="mb-4 sm:mb-6 rounded-2xl shadow-lg w-[200px] sm:w-[250px] md:w-[300px] h-auto"
-              />
               <AnimatedTitle
                 text={step.title}
                 className="text-2xl sm:text-3xl font-black text-white mb-3 sm:mb-4"
@@ -410,8 +406,8 @@ export default function BugePage() {
           <div className="flex-1 flex justify-center order-2 lg:order-1">
             <Image
               ref={footerImageRef}
-              src="/placeholder.svg?height=500&width=400"
-              alt="Cool Bobo with Sunglasses"
+              src="/images/crying-bobo.png"
+              alt="Crying Bobo Bear"
               width={400}
               height={500}
               className="transition-all duration-100 w-[300px] sm:w-[400px] md:w-[500px] h-auto"
@@ -463,7 +459,7 @@ export default function BugePage() {
       </section>
 
       {/* Copyright */}
-      <section className="py-8 sm:py-12 px-4 text-center relative z-10 mb-16 sm:mb-20">
+      <section className="py-8 sm:py-12 px-4 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
           <div className="pt-6 sm:pt-8">
             <p className="text-base sm:text-lg text-black mb-2 font-bold">© 2025 BOBO. All Rights Reserved.</p>
@@ -482,32 +478,6 @@ export default function BugePage() {
           </div>
         </div>
       </section>
-
-      {/* Bottom Ribbon */}
-      <div className="fixed bottom-0 left-0 w-full h-12 sm:h-16 bg-blue-600 z-50 flex items-center overflow-hidden">
-        <div className="flex items-center animate-scroll whitespace-nowrap gap-6 sm:gap-10 min-w-max">
-          {Array.from({ length: 20 }, (_, i) => (
-            <div key={i} className="flex items-center gap-6 sm:gap-10 text-lg sm:text-2xl font-black text-white">
-              <span>
-                THE GOODEST BOY ON <span className="text-white">BASE!</span>
-              </span>
-              <span>
-                ROAR <span className="text-white">ROAR!</span>
-              </span>
-              <span>
-                NOW ON <span className="text-white">BASE NETWORK!</span>
-              </span>
-              <span>
-                WHO'S A <span className="text-white">GOOD BOY?</span>
-              </span>
-              <span>GROWL!</span>
-              <span>
-                <span className="text-white">APE STORE</span> READY!
-              </span>
-            </div>
-          ))}
-        </div>
-      </div>
     </div>
   )
 }
