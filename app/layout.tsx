@@ -11,8 +11,13 @@ const luckiestGuy = Luckiest_Guy({
 
 export const metadata: Metadata = {
   title: "BOBO - The Goodest Boy on Base",
-  description: "BOBO is a digital pug born on Base Network. Join the meme revolution!",
+  description: "BOBO is a digital bear born on Base Network. Join the meme revolution!",
   generator: "v0.dev",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
 }
 
 export default function RootLayout({
@@ -22,6 +27,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+      </head>
       <body className={luckiestGuy.className}>{children}</body>
     </html>
   )
