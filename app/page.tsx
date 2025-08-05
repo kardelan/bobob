@@ -458,6 +458,34 @@ export default function BugePage() {
         </div>
       </section>
 
+      {/* Running Text */}
+      <section className="relative z-10 overflow-hidden py-4 bg-black">
+        <div className="flex whitespace-nowrap animate-scroll">
+          <div className="flex items-center space-x-8 text-white text-2xl font-black min-w-max">
+            <span>$BOBO</span>
+            <span>$BOBO</span>
+            <span>$BOBO</span>
+            <span>$BOBO</span>
+            <span>$BOBO</span>
+            <span>$BOBO</span>
+            <span>$BOBO</span>
+            <span>$BOBO</span>
+            <span>$BOBO</span>
+            <span>$BOBO</span>
+            <span>$BOBO</span>
+            <span>$BOBO</span>
+            <span>$BOBO</span>
+            <span>$BOBO</span>
+            <span>$BOBO</span>
+            <span>$BOBO</span>
+            <span>$BOBO</span>
+            <span>$BOBO</span>
+            <span>$BOBO</span>
+            <span>$BOBO</span>
+          </div>
+        </div>
+      </section>
+
       {/* Copyright */}
       <section className="py-8 sm:py-12 px-4 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
