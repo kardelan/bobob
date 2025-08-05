@@ -133,17 +133,26 @@ export default function BugePage() {
           </Link>
         </Button>
         <Button variant="outline" size="sm" className="bg-white shadow-lg hover:shadow-xl transition-all">
-          <Link href="#" className="font-bold text-black">
+          <Link
+            href="https://dexscreener.com/base/0x80B5a07C10DdD403f8993A673c4f366A8f257032"
+            className="font-bold text-black"
+          >
             CHART
           </Link>
         </Button>
         <Button variant="outline" size="sm" className="bg-white shadow-lg hover:shadow-xl transition-all">
-          <Link href="#" className="font-bold text-black">
+          <Link
+            href="https://ape.store/base/0x23c7439fbec14c7325bcd97bf5c65c856ad66f0c"
+            className="font-bold text-black"
+          >
             BUY $BOBO
           </Link>
         </Button>
         <Button variant="outline" size="sm" className="bg-white shadow-lg hover:shadow-xl transition-all">
-          <Link href="#" className="font-bold text-black">
+          <Link
+            href="https://ape.store/base/0x23c7439fbec14c7325bcd97bf5c65c856ad66f0c"
+            className="font-bold text-black"
+          >
             APE STORE
           </Link>
         </Button>
@@ -179,7 +188,10 @@ export default function BugePage() {
               className="bg-white shadow-lg w-full max-w-xs"
               onClick={() => setMobileMenuOpen(false)}
             >
-              <Link href="#" className="font-bold text-black text-lg">
+              <Link
+                href="https://dexscreener.com/base/0x80B5a07C10DdD403f8993A673c4f366A8f257032"
+                className="font-bold text-black text-lg"
+              >
                 CHART
               </Link>
             </Button>
@@ -189,7 +201,10 @@ export default function BugePage() {
               className="bg-white shadow-lg w-full max-w-xs"
               onClick={() => setMobileMenuOpen(false)}
             >
-              <Link href="#" className="font-bold text-black text-lg">
+              <Link
+                href="https://ape.store/base/0x23c7439fbec14c7325bcd97bf5c65c856ad66f0c"
+                className="font-bold text-black text-lg"
+              >
                 BUY $BOBO
               </Link>
             </Button>
@@ -199,7 +214,10 @@ export default function BugePage() {
               className="bg-white shadow-lg w-full max-w-xs"
               onClick={() => setMobileMenuOpen(false)}
             >
-              <Link href="#" className="font-bold text-black text-lg">
+              <Link
+                href="https://ape.store/base/0x23c7439fbec14c7325bcd97bf5c65c856ad66f0c"
+                className="font-bold text-black text-lg"
+              >
                 APE STORE
               </Link>
             </Button>
@@ -450,7 +468,10 @@ export default function BugePage() {
               size="lg"
               className="bg-white text-black font-black text-xl sm:text-2xl px-6 sm:px-8 py-3 sm:py-4 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-200 w-full sm:w-auto"
             >
-              <Link href="#" className="text-black font-black">
+              <Link
+                href="https://ape.store/base/0x23c7439fbec14c7325bcd97bf5c65c856ad66f0c"
+                className="text-black font-black"
+              >
                 JOIN $BOBO
               </Link>
             </Button>
