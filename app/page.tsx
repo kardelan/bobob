@@ -6,7 +6,6 @@ import Image from "next/image"
 import Link from "next/link"
 
 export default function BugePage() {
-  const [noteModalOpen, setNoteModalOpen] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
   const heroRef = useRef<HTMLDivElement>(null)
@@ -143,11 +142,7 @@ export default function BugePage() {
             BUY $BOBO
           </Link>
         </Button>
-        <Button
-          variant="outline"
-          size="sm"
-          className="bg-gradient-to-r from-blue-200 via-pink-200 to-purple-200 border-2 border-black shadow-lg hover:shadow-xl transition-all animate-pulse"
-        >
+        <Button variant="outline" size="sm" className="bg-white shadow-lg hover:shadow-xl transition-all">
           <Link href="#" className="font-bold text-black">
             APE STORE
           </Link>
@@ -201,7 +196,7 @@ export default function BugePage() {
             <Button
               variant="outline"
               size="lg"
-              className="bg-gradient-to-r from-blue-200 via-pink-200 to-purple-200 shadow-lg w-full max-w-xs"
+              className="bg-white shadow-lg w-full max-w-xs"
               onClick={() => setMobileMenuOpen(false)}
             >
               <Link href="#" className="font-bold text-black text-lg">
@@ -296,57 +291,6 @@ export default function BugePage() {
         />
       </section>
 
-      {/* Message Section */}
-      <section className="min-h-[30vh] flex items-center justify-center relative z-10 px-4">
-        <div className="text-center">
-          <AnimatedTitle
-            text="NEXT CHAPTER"
-            className="text-4xl sm:text-6xl md:text-8xl font-black text-white mb-6 sm:mb-10"
-            style={{ WebkitTextStroke: "1px sm:2px black", WebkitTextFillColor: "white" }}
-          />
-          <Button
-            size="lg"
-            className="bg-white text-black font-black text-xl sm:text-2xl px-6 sm:px-8 py-3 sm:py-4 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-200"
-            onClick={() => setNoteModalOpen(true)}
-          >
-            READ THE STORY
-          </Button>
-        </div>
-      </section>
-
-      {/* Note Modal */}
-      {noteModalOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-[10000] p-4">
-          <div className="bg-white rounded-xl shadow-2xl p-4 sm:p-8 max-w-2xl w-full max-h-[80vh] overflow-y-auto relative">
-            <Button
-              variant="ghost"
-              className="absolute top-2 right-2 sm:top-4 sm:right-4 text-2xl sm:text-3xl font-bold hover:scale-120 transition-transform text-black"
-              onClick={() => setNoteModalOpen(false)}
-            >
-              ×
-            </Button>
-            <div className="mt-8 text-base sm:text-lg leading-relaxed text-black">
-              Bobo is a meme. It exists because something has been lost in crypto. Something that once felt inevitable.
-              We used to hold tokens like they mattered. We used to believe in dumb things that became real things,
-              simply because enough of us refused to let them die. We used to make culture, not chase it.
-              <br />
-              <br />
-              BOBO doesn't come with a promise, a plan, or a pitch. It's not a product of utility, and it's not trying
-              to impress you. It exists because some of us are still here. People who remember what this was, and who
-              are tired of watching everything become a copy of a copy of a copy. BOBO is what happens when you stop
-              trying to manufacture virality and start cultivating belief again.
-              <br />
-              <br />
-              It was never made to be perfect. It was made to endure. A coin for the best of us. For the quietly
-              optimistic. For the ones who are still here.
-              <br />
-              <br />
-              There is no roadmap. There is no leash. Only the Bear.
-            </div>
-          </div>
-        </div>
-      )}
-
       {/* Bobonomics Section */}
       <section className="min-h-screen flex flex-col items-center justify-center relative z-10 px-4 py-10 sm:py-20">
         <AnimatedTitle
@@ -376,22 +320,22 @@ export default function BugePage() {
             {
               title: "NAME",
               text: "Four letters. One bear. Zero fucks given. Clean, and impossible to forget. Just like the goodest boy himself.",
-              bg: "from-blue-200 to-blue-300",
+              bg: "from-blue-100 to-blue-200",
             },
             {
               title: "SUPPLY",
               text: "A trillion. Because why not? Big numbers look cool and nobody wants to deal with tiny decimals.",
-              bg: "from-green-200 to-green-300",
+              bg: "from-blue-200 to-blue-300",
             },
             {
               title: "LIQUIDITY",
               text: "Gone. Poof. Vanished into the void. Sent to a dead wallet that nobody can touch. Not us, not you, not anyone.",
-              bg: "from-purple-200 to-purple-300",
+              bg: "from-blue-300 to-blue-400",
             },
             {
               title: "TAXES",
               text: "What taxes? Trade as much as you want. Buy high, sell low, buy again. We don't take a cut. Your money, your problem.",
-              bg: "from-pink-200 to-pink-300",
+              bg: "from-blue-400 to-blue-500",
             },
           ].map((card, index) => (
             <div
@@ -545,20 +489,20 @@ export default function BugePage() {
           {Array.from({ length: 20 }, (_, i) => (
             <div key={i} className="flex items-center gap-6 sm:gap-10 text-lg sm:text-2xl font-black text-white">
               <span>
-                THE GOODEST BOY ON <span className="text-yellow-300">BASE!</span>
+                THE GOODEST BOY ON <span className="text-white">BASE!</span>
               </span>
               <span>
-                ROAR <span className="text-yellow-300">ROAR!</span>
+                ROAR <span className="text-white">ROAR!</span>
               </span>
               <span>
-                NOW ON <span className="text-yellow-300">BASE NETWORK!</span>
+                NOW ON <span className="text-white">BASE NETWORK!</span>
               </span>
               <span>
-                WHO'S A <span className="text-yellow-300">GOOD BOY?</span>
+                WHO'S A <span className="text-white">GOOD BOY?</span>
               </span>
               <span>GROWL!</span>
               <span>
-                <span className="text-yellow-300">APE STORE</span> READY!
+                <span className="text-white">APE STORE</span> READY!
               </span>
             </div>
           ))}
