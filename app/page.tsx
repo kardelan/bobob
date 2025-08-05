@@ -123,12 +123,12 @@ export default function BugePage() {
       {/* Desktop Navigation */}
       <div className="hidden md:flex fixed top-5 right-5 gap-3 z-50">
         <Button variant="outline" size="sm" className="bg-white shadow-lg hover:shadow-xl transition-all">
-          <Link href="https://t.me/bobocoins" className="flex items-center gap-2">
+          <Link href="https://t.me/boboonbase" className="flex items-center gap-2">
             <span className="font-bold text-black">TELEGRAM</span>
           </Link>
         </Button>
         <Button variant="outline" size="sm" className="bg-white shadow-lg hover:shadow-xl transition-all">
-          <Link href="https://x.com/bobocoins" className="flex items-center gap-2">
+          <Link href="https://x.com/Boboonbase_" className="flex items-center gap-2">
             <span className="font-bold text-black">X</span>
           </Link>
         </Button>
@@ -159,7 +159,7 @@ export default function BugePage() {
               className="bg-white shadow-lg w-full max-w-xs"
               onClick={() => setMobileMenuOpen(false)}
             >
-              <Link href="https://t.me/bobocoins" className="font-bold text-black text-lg">
+              <Link href="https://t.me/boboonbase" className="font-bold text-black text-lg">
                 TELEGRAM
               </Link>
             </Button>
@@ -169,7 +169,7 @@ export default function BugePage() {
               className="bg-white shadow-lg w-full max-w-xs"
               onClick={() => setMobileMenuOpen(false)}
             >
-              <Link href="https://x.com/bobocoins" className="font-bold text-black text-lg">
+              <Link href="https://x.com/Boboonbase_" className="font-bold text-black text-lg">
                 X
               </Link>
             </Button>
